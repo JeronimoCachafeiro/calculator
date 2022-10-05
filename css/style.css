@@ -19,7 +19,7 @@ body {
   padding: 10px;
 }
 
-.btns {
+.keys {
   display: inline-grid;
   grid-gap: 5px;
   grid-template-columns: repeat(4, 1fr);
