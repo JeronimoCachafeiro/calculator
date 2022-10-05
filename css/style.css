@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #205b7a;
+  display: flex;
+  justify-content: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.btn {
+  color: white;
+  padding: 10px;
+}
+
+.btns {
+  display: inline-grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container {
+  background-color: #a2bbcf;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.display {
+  background-color: white;
+  padding: 0 5px;
+}
+
+.equals {
+  background-color: #000000;
+}
+
+.number {
+  background-color: #142f44;
+}
+
+.clear,
+.operator {
+  background-color: #1d3849;
+}
