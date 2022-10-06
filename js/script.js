@@ -35,12 +35,16 @@ keys.addEventListener("click", function (e) {
   } else if (e.target.matches(".operator")) {
     if (e.target.matches(".equals") || typeof a === "number") {
       b = +operand;
-      c = operate(operator, a, b);
-      a = c;
-      b = "";
-      operand = "";
-      display.textContent = "";
-      display.textContent += c;
+      if (b === 0 && operator === divide) {
+        display.textContent = 'ERROR! DON\'T DIVIDE BY 0!'
+      } else {
+        c = operate(operator, a, b);
+        a = c;
+        b = "";
+        operand = "";
+        display.textContent = "";
+        display.textContent += c;
+      }
     } else {
       a = +operand;
       operand = "";
