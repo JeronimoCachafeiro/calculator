@@ -35,7 +35,10 @@ body {
 
 .display {
   background-color: white;
+  height: 50px;
+  overflow-wrap: break-word;
   padding: 0 5px;
+  width: 150px;
 }
 
 .equals {
