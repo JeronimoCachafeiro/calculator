@@ -63,5 +63,12 @@ keys.addEventListener("click", function (e) {
         display.textContent += " / ";
         break;
     }
+  } else if (e.target.matches('.clear')) {
+    a = '';
+    b = '';
+    c = '';
+    operand = '';
+    operator = '';
+    display.textContent = '';
   }
 });
